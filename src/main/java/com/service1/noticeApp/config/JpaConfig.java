@@ -12,7 +12,10 @@ import java.util.Optional;
 @Configuration
 public class JpaConfig {
     @Bean
-    public AuditorAware<String> auditorAware(){
+    public AuditorAware<String> auditorAware() {
         return () -> Optional.of("dhkim"); // spring security 인증 기능을 붙일 때 수정,
     }
 }
+
+
+
